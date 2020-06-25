@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonGrid, IonRow, IonCol, IonItemSliding, IonItemOptions, IonItemOption } from '@ionic/react'
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonItemSliding, IonItemOptions, IonItemOption } from '@ionic/react'
 import './Tab1.css'
 
 interface Character {
@@ -36,7 +36,7 @@ const Tab1: React.FC = () => {
           Authorization: 'Bearer K5RVkjJBo9h9zlhvCrUt'
         },
       })
-      setData(result.data.docs)
+      setData(result.data.docs.slice(0, 50))
       setShowLoading(false)
     }
 

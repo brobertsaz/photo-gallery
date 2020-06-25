@@ -1,5 +1,5 @@
 import React from 'react';
-import { camera, trash, close } from 'ionicons/icons'
+import { camera } from 'ionicons/icons'
 import {
   IonContent,
   IonHeader,
